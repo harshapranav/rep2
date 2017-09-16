@@ -48,7 +48,7 @@ catch(IllegalArgumentException e)
                 throw new IllegalArgumentException();
 }
 catch(IllegalArgumentException e)
-{
+{}
                return students[index];
 
 	}
@@ -75,7 +75,7 @@ catch(IllegalArgumentException e)
  		  throw new IllegalArgumentException();
 }
 catch(IllegalArgumentException e)
-{
+{}
 		this.students[0]=student;
 
 	}
@@ -94,28 +94,8 @@ catch(IllegalArgumentException e)
 
 	@Override
 	public void add(Student student, int index) {
-		try{
-  			if(index<0 || index>students.length){
-  				throw new IllegalArgumentException();
-  		}
- 	else{
-
-
-  		for(int i=0;i<students.length;i++)
-  		{
-  			students[i]=students[i+1];
-          }
-  		this.students = new Student[index];
-  		students[index]=student;
- 		}
-
-  		}
-  			catch(Exception e)
-  			{
-                 System.out.println(e);
- 			}
- 	}
-
+		// Add your implementation here
+	}
 
 	@Override
 	public void remove(int index) {
@@ -129,114 +109,18 @@ catch(IllegalArgumentException e)
 
 	@Override
 	public void removeFromIndex(int index) {
-		try{
-  			if(index<0|| index>students.length){
-  				throw new IllegalArgumentException();
-  		}
-		else{
-
-  		for(int i=index+1;i<=students.length;i++)
-  		{
-  			students[i]=null;
-  		}
-		}
-
-  		}
-  			catch(Exception e)
-  			{
- 				System.out.println(e);
- 			}
-    // Add your implementation here
- 	}// Add your implementation here
-
+		// Add your implementation here
+	}
 
 	@Override
 	public void removeFromElement(Student student) {
-		int i;
- 	    try{
-  			if(student==null){
-  				throw new IllegalArgumentException();
-  		}
-    else{
-
-  		for(i=0;i<students.length;i++)
-  		{
-  			if(students[i]==student)
- 				break;
- 		}
- 		for(int j=0;i<=students.length;i++)
-  		{
-  			students[i]=students[i+1];
-  		}
- 	}
-
-  		}
-  			catch(Exception e)
-  			{
- 				System.out.println(e);
- 			}
-
- 		// Add your implementation here
- 	}
- // Add your implementation here
+		// Add your implementation here
+	}
 
 	@Override
 	public void removeToIndex(int index) {
-		{
- 	    try{
-  			if(index<0|| index>students.length){
-  				throw new IllegalArgumentException();
-  		}
- 		else{
-
-  		for(int i=0;i<=index;i++)
-  		{
-  			students[i]=students[index+1];
-
-  		}
- 		}
-
-  		}
-  			catch(Exception e)
-  			{
- 				System.out.println(e);
- 			}
- 		// Add your implementation here
- 	}
-
- 	@Override
- 	public void removeToElement(Student student) {
- 	   int p=0;
- 	    try{
-  			if(student==null){
-  				throw new IllegalArgumentException();
-  		}
- 		else{
-
-  		for(int i=0;i<students.length;i++)
-  		{
-  			if(students[i]==student)
- 			{
- 				p=i;
- 				break;
- 			}
-
- 		}
- 		for(int i=0;i<p;i++)
- 		{
-  			students[i]=students[p+1];
-
-  		}
-    }
-
-  		}
-  			catch(Exception e)
-  			{
- 				System.out.println(e);
- 			}
- 		// Add your implementation here
- 	}// Add your implementation here
-
+		// Add your implementation here
+	}
 
 	@Override
 	public void removeToElement(Student student) {
